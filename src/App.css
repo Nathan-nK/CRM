@@ -1,33 +1,142 @@
+body {
+  background-color: #ecf0f1;
+  font-family: Montserrat;
+}
 .App {
+  background-color: #ecf0f1;
+}
+#nav-bar {
+  background-color: #0a1612;
+  height: 50px;;
+}
+
+.link {
+  color:white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.clientTable {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 1%;
   text-align: center;
+  width: 98%;
+  border-collapse: collapse
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.editUserBox {
+  position: absolute;
+  width: 20.5%;
+  height: 25%;
+  background-color: black;
+  margin-top: 5%;
+  margin-left: 50%;
+  opacity: 0.8;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.updateButton {
+  width: 100%;
+  height: 5vh;;
+  margin-top: 15%;
+  margin-left: 2.5%;
+  background-color: #F7CE3E; 
+  border: none;
+  opacity: 5;
+  font-size: 15px;
+  font-family: Montserrat;
 }
 
-.App-link {
-  color: #61dafb;
+/* .rowClass {
+  position: absolute;
+} */
+
+.tdClass {
+  border-bottom: 1px solid grey;
+  padding: 10px; 
+  font-size: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rowClassHead {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #F7CE3E;  
 }
+
+.select-input {
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 20;
+  height: 38px;
+  border: none;
+  background-color: #D1D1D1;
+  font-family: Montserrat;
+  font-size: 15px;
+}
+
+.searchClients{
+  margin-top: 5px;
+  width: 200px;
+  height: 35px;
+  border: none;
+  background-color: #D1D1D1;
+  font-family: Montserrat;
+  font-size: 15px;
+}
+
+
+
+.backNext {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.upTitle {
+  color:white;
+  font-family: Montserrat;
+}
+
+.addClient {
+  width: 100%;
+  height: 40px;
+  background-color: #F7CE3E; 
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Montserrat;
+  cursor: pointer;
+}
+
+.add {
+  margin-left: 10px;
+}
+
+.update {
+  margin-left: 10px;
+  
+}
+
+.UpdateButtons {
+  width: 100%;
+  height: 30px;
+  margin-left: 30px;
+  background-color: #F7CE3E; 
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Montserrat;
+  cursor: pointer;
+}
+
+.AddInput{
+  width: 200px;
+  height: 30px;
+  border: none;
+  background-color: #D1D1D1;
+  font-family: Montserrat;
+  font-size: 15px;
+}
+
