@@ -2,6 +2,9 @@ const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
+const api = require('./routes/api')
+
+
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 const client = require("./models/clientSchema")
@@ -12,31 +15,10 @@ app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With')
     next()
 })
-app.get("/clients", function (req, res) {
-    client.find({}, function (err, clients) {
-        res.send(clients)
-    })
-})
-app.post("/client", function (req, res) {
-    const clientData = req.body
-    const c1 = new client(clientData)
-    c1.save()
-    res.end()
-})
-app.put("/client/:clientid", function (req, res) {
-    let id = req.params.clientid
-    let update = req.body
-    client.findOneAndUpdate({ "_id": id }, update).then(function () {
-    })
-    res.end()
-})
-app.delete("/client/:clientID", function (req, res) {
-    let id = req.params.clientID
-    client.findOneAndDelete({ "_id": id }).then(function () {
-    })
-    res.end()
-})
+
+app.use('/', api)
+
 port = 3030
 mongoose.connect('mongodb://localhost/Clients', { useNewUrlParser: true }).then(() => {
-    app.listen(port, () => console.log(`Running Server On Port + ${port}`))
+    app.listen(port, () => console.log(`Running Server On Port ${port}`))
 })

@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
-
+import Badges from './Badges/Badges'
 class Analytics extends Component {
     render() {
         return (
-            <div> </div>
+            <div> 
+                <Badges users={this.props.users} />
+                {/* <Charts users={this.props.users} /> */}
+            </div>
         )
     }
 }

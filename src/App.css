@@ -48,10 +48,6 @@ body {
   font-family: Montserrat;
 }
 
-/* .rowClass {
-  position: absolute;
-} */
-
 .tdClass {
   border-bottom: 1px solid grey;
   padding: 10px; 
@@ -85,8 +81,6 @@ body {
   font-size: 15px;
 }
 
-
-
 .backNext {
   font-size: 20px;
   margin-left: 10px;
@@ -116,7 +110,6 @@ body {
 
 .update {
   margin-left: 10px;
-  
 }
 
 .UpdateButtons {
@@ -138,5 +131,92 @@ body {
   background-color: #D1D1D1;
   font-family: Montserrat;
   font-size: 15px;
+}
+
+.badges{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-items: center;
+  font-family: Montserrat;
+}
+
+.badge{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
+}
+
+.badgeContent {
+  text-align: center;
+  font-size: 400%;
+  margin-left: 20%;
+  margin-top: 20%;
+  color: white;
+}
+
+.circle {
+  margin-top: 10px;
+  border-radius: 50%;
+  width: 8vw;
+  height: 16vh;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.fa-chart-line {
+  text-align: center;
+  font-size: 650%;
+  margin-top: 10%;
+  color: white;
+}
+
+.fa-envelope {
+  text-align: center;
+  font-size: 650%;
+  margin-top: 15%;
+  color: white;
+}
+
+.fa-user-circle {
+  text-align: center;
+  font-size: 650%;
+  margin-top: 15%;
+  color: white;
+}
+
+.fa-globe-asia {
+  text-align: center;
+  font-size: 650%;
+  margin-top: 15%;
+  color: white;
+}
+
+.one {
+  background-color: #2ecc71;
+}
+
+.two{
+  background-color: #3498db;
+}
+
+.three{
+  background-color: #f1c40f;
+}
+
+.four{
+  background-color: #e74c3c;
+}
+
+.data {
+  font-size: 150%;
+  font-family: Montserrat;
+}
+
+.statNumber {
+  font-size: 300%;
+}
+
+.statHeader {
+  font-size: 90%;
 }
 

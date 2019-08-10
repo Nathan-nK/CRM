@@ -37,7 +37,7 @@ class Clients extends Component {
       this.setState({
         page: this.state.page - 1
       })
-    } else if (this.state.page <=  1) {
+    } else if (this.state.page <  1) {
       alert('Already at the beggining')
     }
   }
