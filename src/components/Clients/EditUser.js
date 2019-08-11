@@ -41,7 +41,7 @@ class EditUser extends Component {
         if (this.state.name !== "") {
             fname = this.state.name[0].toUpperCase() + this.state.name.slice(1).toLowerCase()
         }
-        if (this.state.surname !== "") {
+        if (this.state.surename !== "") {
             surename = this.state.surename[0].toUpperCase() + this.state.surename.slice(1).toLowerCase()
         }
         let fullname = fname + " " + surename

@@ -26,8 +26,8 @@ class CountryBadge extends Component {
                 <div className="circle three"><i class="fas fa-globe-asia"></i></div>
                 <div className="data">
                     <h2 className='statNumber'>{country}</h2>
-                    <h4 className='statHeader'>Hottest country </h4>
                 </div>
+                <h4 className='statHeaderCountry'>Hottest country </h4>
             </div>
         )
     }

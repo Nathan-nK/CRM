@@ -10,8 +10,8 @@ class EmailBadge extends Component {
                 <div className="circle two"><i class="fas fa-envelope"></i></div>
                 <div className="data">
                     <h2 className='statNumber'>{emailsNum}</h2>
-                    <h4 className='statHeader'>Emails sent</h4>
                 </div>
+                <h4 className='statHeaderEmail'>Emails sent</h4>
             </div>
         )
     }

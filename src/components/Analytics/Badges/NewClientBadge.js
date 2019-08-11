@@ -17,15 +17,14 @@ class NewClientBadge extends Component {
     }
 
     render() {
-        const date = new Date();
-        const month = date.toLocaleString('default', { month: 'long' });
+
         return (
             <div className="badge">
                 <div className="circle one"><span className='icon'></span><i class="fas fa-chart-line"></i></div>
                 <div className="data">
-                    <h2 className='statNumber'>{this.state.numberOfNewClients}</h2>
-                    <h4 className='statHeader'>New {month} Clients</h4>
+                    <h2 className='statNumber'>{this.state.numberOfNewClients}</h2>    
                 </div>
+                <h4 className='statHeaderMonth'>New Clients Over Last Month</h4>
             </div>
         )
     }

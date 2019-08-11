@@ -27,8 +27,8 @@ body {
 
 .editUserBox {
   position: absolute;
-  width: 20.5%;
-  height: 25%;
+  width: 20.5vw;
+  height: 25vh;
   background-color: black;
   margin-top: 5%;
   margin-left: 50%;
@@ -60,6 +60,9 @@ body {
   background-color: #F7CE3E;  
 }
 
+.rowClass:hover {
+    background-color: rgb(209, 209, 209);
+}
 .select-input {
   margin-top: 5px;
   margin-left: 5px;
@@ -136,7 +139,6 @@ body {
 .badges{
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  justify-items: center;
   font-family: Montserrat;
 }
 
@@ -146,48 +148,47 @@ body {
   justify-items: center;
 }
 
-.badgeContent {
-  text-align: center;
-  font-size: 400%;
-  margin-left: 20%;
-  margin-top: 20%;
-  color: white;
+.fa-check {
+  color: green;
+}
+
+.fa-times {
+  color: red;
 }
 
 .circle {
-  margin-top: 10px;
+  margin-top: 60px;
   border-radius: 50%;
   width: 8vw;
   height: 16vh;
-  margin-top: 50px;
   text-align: center;
 }
 
 .fa-chart-line {
   text-align: center;
-  font-size: 650%;
-  margin-top: 10%;
+  font-size: 4.5em;
+  margin-top: 13%;
   color: white;
 }
 
 .fa-envelope {
   text-align: center;
-  font-size: 650%;
-  margin-top: 15%;
+  font-size: 4.5em;
+  margin-top: 13%;
   color: white;
 }
 
 .fa-user-circle {
   text-align: center;
-  font-size: 650%;
-  margin-top: 15%;
+  font-size: 4.5em;
+  margin-top: 13%;
   color: white;
 }
 
 .fa-globe-asia {
   text-align: center;
-  font-size: 650%;
-  margin-top: 15%;
+  font-size: 4.5em;
+  margin-top: 13%;
   color: white;
 }
 
@@ -208,15 +209,52 @@ body {
 }
 
 .data {
-  font-size: 150%;
+  font-size: 1.5em;
   font-family: Montserrat;
+  position: absolute;
 }
 
 .statNumber {
-  font-size: 300%;
+  font-size: 2em;
+  position: absolute;
+  top: 20px;
+  left: 150px;
 }
 
-.statHeader {
-  font-size: 90%;
+.statHeaderMonth {
+  margin-top: 8em;
+  margin-left: 8.5em;
+  position: absolute;
 }
 
+.statHeaderCountry {
+  margin-top: 8em;
+  margin-left: 8.5em;
+  position: absolute;
+}
+
+.statHeaderEmail {
+  margin-top: 8em;
+  margin-left: 8.5em;
+  position: absolute;
+}
+
+.statHeaderOutstanding {
+  margin-top: 8em;
+  margin-left: 8.5em;
+  position: absolute;
+}
+
+.sales {
+  left: 17vw;
+  bottom: 34vh;
+  position: absolute;
+  font-weight: bold;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  font-family: Montserrat;
+  margin-top: 10px;
+}

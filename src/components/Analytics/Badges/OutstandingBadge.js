@@ -10,8 +10,8 @@ class OutstandingBadge extends Component {
                 <div className="circle four"> <i class="fas fa-user-circle"></i></div>
                 <div className="data">
                     <h2 className='statNumber'>{outStandingNum}</h2>     
-                    <h4 className='statHeader'>Outstanding clients</h4>
                 </div >
+                <h4 className='statHeaderOutstanding'>Outstanding clients</h4>
            </div>
         )
     }
