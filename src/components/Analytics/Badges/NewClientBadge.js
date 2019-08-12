@@ -24,7 +24,7 @@ class NewClientBadge extends Component {
                 <div className="data">
                     <h2 className='statNumber'>{this.state.numberOfNewClients}</h2>    
                 </div>
-                <h4 className='statHeaderMonth'>New Clients Over Last Month</h4>
+                <h4 className='statHeader'>New Clients Over Last Month</h4>
             </div>
         )
     }

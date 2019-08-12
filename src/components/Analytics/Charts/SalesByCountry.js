@@ -5,21 +5,18 @@ import {
 
 class SalesByCountry extends PureComponent {
    static jsfiddleUrl = 'https://jsfiddle.net/alidingling/30763kr7/';
+
    findCountries = () => {
        let countriesList = {}
        this.props.users.filter(m => m.sold).map(m => countriesList[m.country] ? null : countriesList[m.country] = 0)
        this.props.users.filter(m => m.sold).map(m => countriesList[m.country]++)
-       console.log(countriesList)
        return countriesList
    }
-   findHottestCountries = (countries) => {
+   
+   sortForChartCountries = (countries) => {
        const arr =[]
-       let highest = Object.values(countries).sort(function (a, b) { return b - a })
-       const highestSales = highest
-       let keysSorted = Object.keys(countries).sort(function (a, b) { return countries[b] - countries[a] })
-       const topCountries = keysSorted
-       console.log(highestSales)
-       console.log(topCountries)
+       let highestSales = Object.values(countries)
+       let topCountries = Object.keys(countries)
        let i = 0
        while (i < highestSales.length) {
            arr[i] = {name : topCountries[i], pv : highestSales[i]}
@@ -30,9 +27,10 @@ class SalesByCountry extends PureComponent {
 
    render() {
        let countries = this.findCountries()
-       let country = this.findHottestCountries(countries)
-       console.log(country)
+       let country = this.sortForChartCountries(countries)
        return (
+           <div>
+               <h4 className='chartTitle'>Sales By Country</h4>
            <BarChart
                width={800}
                height={200}
@@ -46,6 +44,7 @@ class SalesByCountry extends PureComponent {
                <Tooltip />
                <Bar dataKey="pv" fill="#8884d8" />
            </BarChart>
+           </div>
        );
    }
 }

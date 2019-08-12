@@ -221,25 +221,7 @@ body {
   left: 150px;
 }
 
-.statHeaderMonth {
-  margin-top: 8em;
-  margin-left: 8.5em;
-  position: absolute;
-}
-
-.statHeaderCountry {
-  margin-top: 8em;
-  margin-left: 8.5em;
-  position: absolute;
-}
-
-.statHeaderEmail {
-  margin-top: 8em;
-  margin-left: 8.5em;
-  position: absolute;
-}
-
-.statHeaderOutstanding {
+.statHeader {
   margin-top: 8em;
   margin-left: 8.5em;
   position: absolute;
@@ -247,14 +229,22 @@ body {
 
 .sales {
   left: 17vw;
-  bottom: 34vh;
+  bottom: 25vh;
   position: absolute;
   font-weight: bold;
 }
 
 .charts {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
   font-family: Montserrat;
   margin-top: 10px;
+}
+
+.TopCharts {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.BottomCharts {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }

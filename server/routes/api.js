@@ -40,6 +40,50 @@ router.get('/monthlyclients', function (req, res) {
     })
 })
 
+router.get('/monthlySales', function (req, res) {
+    let dateToCheck = new Date();
+    dateToCheck.setDate(dateToCheck.getDate() - 30)
+    client.find({
+        'firstContact':
+        {
+            "$gte": dateToCheck,
+        },
+        sold: true
+    }).exec(function (err, clients) {
+        res.send(clients)
+    })
+})
+
+router.get('/HalfYearSales', function (req, res) {
+    let dateToCheck = new Date();
+    let dateToCheck2 = new Date();
+    dateToCheck.setDate(dateToCheck.getDate() - 180)
+    dateToCheck2.setDate(dateToCheck.getDate() - 365)
+    client.find({
+        'firstContact':
+        {
+            "$gte": dateToCheck2,
+            "$lte": dateToCheck,
+        },
+        
+    }).exec(function (err, clients) {
+        res.send(clients)
+    })
+})
+
+router.get('/YearlySales', function (req, res) {
+    let dateToCheck = new Date();
+    dateToCheck.setDate(dateToCheck.getDate() - 365)
+    client.find({
+        'firstContact':
+        {
+            "$lte": dateToCheck,
+        },
+        sold: true
+    }).exec(function (err, clients) {
+        res.send(clients)
+    })
+})
 
 
 module.exports = router

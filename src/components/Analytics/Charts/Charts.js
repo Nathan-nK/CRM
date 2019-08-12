@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import TopEmployeesChart from './TopEmployeesChart'
 import SalesByCountry from './SalesByCountry'
-// import ClientAcquisitionChart from './ClientAcqusitionChart'
-// import SalesSinceChart from './SalesSinceChart'
-import axios from 'axios'
+import ClientAquisitionChart from './ClientAquisitionChart'
+import SalesSinceChart from './SalesSinceChart'
 
 class Charts extends Component {
     constructor() {
@@ -17,9 +16,15 @@ class Charts extends Component {
         return (
             <div>
                 <div className="charts">
+                    <div className='TopCharts'>
                     <TopEmployeesChart users={this.props.users} />
                     <SalesByCountry users={this.props.users} />
-                    {/* <ClientAcquisitionChart data={this.state.data} /> */}
+                    </div>
+
+                    <div className='BottomCharts'>
+                    <SalesSinceChart />
+                    <ClientAquisitionChart users={this.props.users} />
+                    </div>
                 </div>
             </div>
         )
