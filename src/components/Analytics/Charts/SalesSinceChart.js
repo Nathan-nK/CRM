@@ -65,7 +65,7 @@ class SalesSinceChart extends PureComponent {
                     <XAxis dataKey="name" />
                     <YAxis />
                     <Tooltip />
-                    <Line type="monotone" dataKey="Sales" stroke="#8884d8" activeDot={{ r: 8 }} />
+                    <Line type="monotone" dataKey="Sales" stroke="#FC5305" activeDot={{ r: 8 }} />
                 </LineChart>
             </div>
         );

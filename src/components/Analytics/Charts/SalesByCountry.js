@@ -42,7 +42,7 @@ class SalesByCountry extends PureComponent {
                <XAxis dataKey="name" />
                <YAxis />
                <Tooltip />
-               <Bar dataKey="pv" fill="#8884d8" />
+               <Bar dataKey="pv" fill="#3ED858" />
            </BarChart>
            </div>
        );

@@ -67,9 +67,10 @@ class App extends Component {
         <div className="App">
           <div id="home-background"></div>
           <div id="nav-bar">
-            <Link to='/Clients' className='link'>Clients</Link>
-            <Link to='/Actions' className='link'>Actions</Link>
-            <Link to='/Analytics' className='link'>Analytics</Link>
+            <div><Link to='/Clients' className='link'>Clients</Link></div>
+            <div><Link to='/Actions' className='link'>Actions</Link></div>
+            <div><Link to='/Analytics' className='link'>Analytics</Link></div>
+            <span className='logo'>CRM</span>
           </div>
 
         </div>
